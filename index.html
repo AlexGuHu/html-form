@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <style>
+        .form-1{
+            width: 270px;
+            border:2px solid black;
+            border-radius:35px;
+            margin: 5px;
+            padding: 5px;
+            padding-left: 10px;
+            padding-right:10px;
+        }
+        .container{
+            width: 100%;
+            display: flex;
+            justify-content:  center;
+            margin-top: 15rem
+        }
+        .card{
+            width: 300px;
+            border: 1px solid black;
+            border-radius: 25px;
+            padding: 25px;
+            box-shadow: 15px 15px 10px gray;
+        }
+        .card-body{
+            width: 100%;
+        }
+        input[type="submit"]{
+            width: 100%;
+            color:white;
+            background-color: black;
+            border:1px solid black;
+            border-radius: 25px;
+            padding-top:5px;
+            padding-bottom: 5px;
+            margin-top: 5px
+        }
+        input[type="submit"]:hover{
+            color: black;
+            background-color: white;
+            border: 2px solid black;
+        }
+        .rad{
+            margin-top: .5rem;
+            margin-bottom: .5rem;
+        }
+        .footer{
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem
+        }
+    </style>
+    <body>
+        <div class="container">
+            <div class="card">
+                <div class="card-body">
+                    <form method="POST">
+                        <input type="text" class="form-1" placeholder="Nombres"><br>
+                        <input type="text" class="form-1" placeholder="Apellidos" /><br>
+                        <input type="number" class="form-1" placeholder="Edad">
+                        <input type="radio" class="rad" value="H" name="1"> Hombre
+                        <input type="radio" class="rad" value="M" name="1"> Mujer
+                        <input type="submit" value="Enviar Datos">
+                        <span class="footer">By Alex GH</span>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
